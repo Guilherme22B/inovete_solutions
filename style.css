@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&family=Inconsolata:wght@300&family=Libre+Baskerville&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500&display=swap');
+
+@font-face {
+    font-family: hedtech;
+    src: url(fonts/Technopath.otf);
+}
+
+@font-face {
+    font-family: tech;
+    src: url(fonts/Technotot.otf);
+
+
+
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: var(--font-titulo);
+}
+:root{
+    --azul-escuro: #00373D;
+    --cinza: #86C1C8;
+    --azul-claro: #00AABD;
+    --cinza-escuro:#2C4042;
+    --verde-escuro: #00818F;
+
+    --preto: black;
+    --barnco: white;
+
+    --font-ptincipal: 'Open Sans', sans-serif;
+    --font-hed: hedtech;
+    --font-titulo:tech;
+}
+body{
+    animation: bgc 15s ease infinite;
+    background: linear-gradient(-40deg,var(--azul-claro),var(--azul-claro), var(--verde-escuro), var(--azul-escuro)) no-repeat;
+    background-size: 300% 300%;
+}
+main{
+    padding: 30px;
+    margin: 100px;
+    background-color: var(--barnco);
+    width: 733px;
+    margin: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5px;
+    box-shadow: 3px 2px 16px rgba(0, 0, 0, 0.295);
+}
+.cont{
+    height: 220px;
+    width: 450px;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+header{
+    position: relative;
+    background-color: grey;
+    height: 250px;
+
+    background-color: var(--cinza-escuro);
+    font-family: hedtech;
+    color: white;
+    border-radius: 10px;
+    height: 100px;
+    padding: 5px;
+    box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.164);
+    
+}
+header img{
+    position: relative;
+    height: 80px;
+    margin-left: 130px;
+    margin-right: 15px;
+    
+    display: flexbox;
+}
+h1{
+    position: absolute;
+    top: 50%;
+    transform: translate(0,-66%);
+
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2.3rem;
+    display: inline;
+}
+h1 > a{
+    color: var(--barnco);
+}
+h2{
+    padding: 2px;
+    padding-left: 10px;
+    border-radius: 4.3px 0px 0px 4.3px;
+    width: 400px;
+    margin: 25px 10px 10px 10px;
+    background:  linear-gradient( 50deg,var(--azul-claro),transparent, var(--barnco));
+    color: white;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.39);
+}
+p{
+    padding: 10px 0px;
+    text-indent: 20px;
+    font-family: var(--font-ptincipal);
+}
+a{
+    text-decoration: none;
+    color: var(--azul-claro);
+}
+div#conteudo{
+    display: flex;
+}
+form{
+
+    display: block;
+    width: 100px;
+    margin-top: 30px;
+}
+form label{
+    text-indent: 0px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    padding: 10px 0px;
+    font-family: var(--font-ptincipal);
+    font-size: 16px;
+    pointer-events: none;
+    transition: .5s;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+form input{
+    text-indent: 0px;
+    width: 150%;
+    padding: 10px;
+    outline: none;
+    border: 0;
+    border-bottom: 1px solid black;
+    font-family: var(--font-ptincipal);
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+form input:focus~label, 
+form input:valid~label{
+    top: -22px;
+    font-size: 11px;
+    left: 0px;
+}
+div.used{
+    position: relative;
+}
+form button{
+    margin-top: 15px;
+    background-color: var(--azul-escuro);
+    border: none;
+    font-weight: bold;
+    padding: 9px;
+    color: var(--barnco);
+    font-family: var(--font-ptincipal);
+    width: 170px;
+    border-radius: 100px;
+    box-shadow: -1.1px 5px 10px rgba(0, 0, 0, 0.418);
+}
+
+
+
+table{
+    overflow: auto;
+
+    margin-top: 15px;
+    margin-left: 100px;
+    border-width: 7px;
+
+    border: 6px solid var(--cinza-escuro);
+
+
+    border-collapse: collapse;
+}
+tr:nth-child(2n){
+    background-color: rgba(218, 218, 218, 0.637);
+}
+th{
+    height: 30px;
+    padding: 4px 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+td{
+    border: 1px solid black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+@keyframes bgc{
+    0%{
+        background-position: 0%, 50%;
+    }
+    50%{
+        background-position: 100%, 50%;
+    }
+    100%{
+        background-position: 0%, 50%;
+    }
+}
