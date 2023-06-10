@@ -99,3 +99,40 @@ while True:
 
     else:
         print("Opção inválida. Digite novamente.")
+
+    
+#conversor para exel
+
+from openpyxl import Workbook
+
+arquivo  = Workbook()
+
+Projeto = arquivo.active #criação da planilha
+
+plan_qte_estoque = arquivo.create_sheet("qte_estoque") #criação da subi planilha
+plan_itens = arquivo.create_sheet("Itens_(lista)") #criação da subi planilha
+plan_escala_venda = arquivo.create_sheet("escala de venda") #criação da subi planilha
+plan_imposto_renda = arquivo.create_sheet("imposto de renda") #criação da subi planilha
+plan_mag_lucro = arquivo.create_sheet("margem de lucro") #criação da subi planilha
+plan_custo = arquivo.create_sheet("custo") #criação da subi planilha
+plan_preco_venda = arquivo.create_sheet("preço de venda") #criação da subi planilha
+plan_total_vendas = arquivo.create_sheet("total de vendas") #criação da subi planilha
+plan_lucro_total = arquivo.create_sheet("lucro total") #criação da subi planilha
+Projeto.title = "Produtos"
+
+a = str(input("qualquer coisa")) #teste para colocar informações
+b = str(input("qualquer coisa")) #teste para colocar informações
+c = str(input("qualquer coisa")) #teste para colocar informações 
+d = str(input("qualquer coisa")) #teste para colocar informações
+
+Projeto["A1"] = a #A1 igual a celula que vai ficar com os dados A2 A3 A4 a mesma coisa
+Projeto["A2"] = b
+Projeto["A3"] = c
+Projeto["A4"] = d
+
+plan_itens["A1"] = a #plan_itens igual a planilha que vai ser salva os dados 
+plan_itens["A2"] = b
+plan_itens["A3"] = c
+plan_itens["A4"] = d
+
+arquivo.save("Projeto.xlsx") #teste para salvar as planilhas
