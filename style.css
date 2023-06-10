@@ -213,3 +213,39 @@ tfoot > td{
         background-position: 0%, 50%;
     }
 }
+
+@media screen and (max-width: 375px){
+    header{
+        border-radius: 5px 5px 0px 0px;
+    }
+    h1{
+        font-size: 29px;
+    }
+    header > img{
+        margin: 0px;
+    }
+    main{
+        width: 300px;
+        padding: 0px;
+    }
+    img.cont{
+        height: 220px;
+        width: 100%;
+    }
+    p{
+        text-indent: 0px;
+        margin-left: 10px;
+    }
+    h2{
+        width: 270px;
+        background:  linear-gradient(50deg ,var(--azul-claro),transparent, transparent);
+        margin: 10px 3px;
+    }
+}
+
+
+@media screen and (max-width: 780px){
+    main{
+
+    }
+}
