@@ -106,15 +106,6 @@ p{
     text-indent: 20px;
     font-family: var(--font-ptincipal);
 }
-a > button{
-    background-color: var(--azul-escuro);
-    color: var(--barnco);
-    border: none;
-    width: 250px;
-    height: 30px;
-    border-radius: 10px;
-    margin-left: 200px;
-}
 a{
     text-decoration: none;
     color: var(--azul-claro);
@@ -179,7 +170,21 @@ div.used{
     box-shadow: -1.1px 5px 10px rgba(0, 0, 0, 0.418);
 }
 
+#bnav button{
+    background-color: var(--azul-escuro);
+    display: block;
+    margin-top: 20px;
+    margin-left: 50%;
+    width: 400px;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    box-shadow: -5px 2px 8px rgba(0, 0, 0, 0.24);
+    height: 60px;
+    color: white;
+    transform: translate(-50%);
 
+}
 
 table{
     position: absolute;
@@ -306,6 +311,7 @@ tfoot > td{
         margin-left: 90px;
         margin-bottom: 25px;
     }
+    
     table{
         position: relative;
         margin-left: 10px;
