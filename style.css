@@ -225,6 +225,7 @@ tfoot > td{
         margin: 0px;
     }
     main{
+        margin: 20px 0px;
         width: 300px;
         padding: 0px;
     }
@@ -244,8 +245,46 @@ tfoot > td{
 }
 
 
-@media screen and (max-width: 780px){
+@media screen and (max-width: 500px){
+    header{
+        border-radius:0px;
+        max-width: 100%;
+        min-width: 335px;
+    }
+    h1{
+        font-size: 29px;
+    }
+    header > img{
+        margin: 0px;
+    }
     main{
-
+        margin: 0px 0px 0px 0px;
+        max-width: 425px;
+        min-width: 345px;
+        padding: 0px;
+    }
+    img.cont{
+        margin: 0px;
+        max-width: 425px;
+        min-width: 340px;
+    }
+    p{
+        width: 320px;
+        text-indent: 0px;
+        margin-left: 10px;
+    }
+    h2{
+        max-width: 400px;
+        min-width: 320px;
+        background:  linear-gradient(50deg ,var(--azul-claro),transparent, transparent);
+        margin: 10px 3px;
+    }
+    dic#conteudo{
+        display: none;
+    }
+}
+@media screen and (min-width: 375px){
+    main{
+        margin: auto;
     }
 }
