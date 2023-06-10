@@ -99,12 +99,21 @@ h2{
     margin: 25px 10px 10px 10px;
     background:  linear-gradient( 50deg,var(--azul-claro),transparent, var(--barnco));
     color: white;
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.39);
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.627);
 }
 p{
     padding: 10px 0px;
     text-indent: 20px;
     font-family: var(--font-ptincipal);
+}
+a > button{
+    background-color: var(--azul-escuro);
+    color: var(--barnco);
+    border: none;
+    width: 250px;
+    height: 30px;
+    border-radius: 10px;
+    margin-left: 200px;
 }
 a{
     text-decoration: none;
