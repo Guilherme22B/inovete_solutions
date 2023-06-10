@@ -39,12 +39,10 @@ body{
 }
 main{
     padding: 30px;
-    margin: 100px;
     background-color: var(--barnco);
-    width: 733px;
-    margin: 100px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: auto;
+    width: 650px;
+    margin: 50px auto 30px auto;
     border-radius: 5px;
     box-shadow: 3px 2px 16px rgba(0, 0, 0, 0.295);
 }
@@ -112,16 +110,17 @@ a{
     text-decoration: none;
     color: var(--azul-claro);
 }
-div#conteudo{
-    display: flex;
-}
-form{
 
+div#conteudo{
+    display: flex
+}
+#form{
+    position: relative;
     display: block;
     width: 100px;
     margin-top: 30px;
 }
-form label{
+#form label{
     text-indent: 0px;
     position: absolute;
     top: 0px;
@@ -138,7 +137,7 @@ input::-webkit-inner-spin-button {
     margin: 0;
 }
 
-form input{
+#form input{
     text-indent: 0px;
     width: 150%;
     padding: 10px;
@@ -149,8 +148,8 @@ form input{
     font-size: 16px;
     margin-bottom: 30px;
 }
-form input:focus~label, 
-form input:valid~label{
+#form input:focus~label, 
+#form input:valid~label{
     top: -22px;
     font-size: 11px;
     left: 0px;
@@ -158,7 +157,7 @@ form input:valid~label{
 div.used{
     position: relative;
 }
-form button{
+#form button{
     margin-top: 15px;
     background-color: var(--azul-escuro);
     border: none;
@@ -174,10 +173,11 @@ form button{
 
 
 table{
+    position: absolute;
+    top: 0%;
+    height: 270px;
     overflow: auto;
-
-    margin-top: 15px;
-    margin-left: 100px;
+    margin-left: 197px;
     border-width: 7px;
 
     border: 6px solid var(--cinza-escuro);
@@ -190,12 +190,12 @@ tr:nth-child(2n){
 }
 th{
     height: 30px;
-    padding: 4px 10px;
+    padding: 4px 5px;
     font-family: Arial, Helvetica, sans-serif;
 }
 td{
     text-align: center;
-    height: 12px;
+    height: 15px;
     border: 1px solid black;
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -258,7 +258,7 @@ tfoot > td{
         margin: 0px;
     }
     main{
-        margin: 0px 0px 0px 0px;
+        margin: 0px auto auto auto;
         max-width: 425px;
         min-width: 345px;
         padding: 0px;
@@ -283,7 +283,7 @@ tfoot > td{
         display: none;
     }
 }
-@media screen and (min-width: 375px){
+@media screen and (max-width: 375px){
     main{
         margin: auto;
     }

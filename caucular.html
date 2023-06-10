@@ -18,7 +18,7 @@
 
 <div id="conteudo">
     
-            <form action="">
+            <div id="form">
                 <div class="used">
     
                     <input id="produto" type="text" required>
@@ -35,11 +35,12 @@
                     <label for="">Custo</label>
                 </div>
     
-                <button onclick=  "myfunction()">Adicionar</button>
+                <button onclick= "myfunction()">Adicionar</button>
+                
             </form>
     
     
-            <table>
+            <table oncanplay="pr()">
                 <colgroup>
                     <col>
                     <col>
@@ -49,8 +50,8 @@
                 <thead>
                     <tr>
                         <th>Nome</th>
-                        <th>Custo</th>
                         <th>Quantidade</th>
+                        <th>Custo</th>
                         <th>Markup</th>
                         <th>frete</th>
                         <th>impostos</th>
@@ -60,8 +61,8 @@
                 <tbody>
                     <tr>
                         <td id="n1"></td>
-                        <td id="c1"></td>
                         <td id="q1"></td>
+                        <td id="c1"></td>
                         <td></td>
                         <td></td>
                         <td></td>
@@ -69,8 +70,8 @@
                     </tr>
                     <tr>
                         <td id="n2"></td>
-                        <td id="c2"></td>
                         <td id="q2"></td>
+                        <td id="c2"></td>
                         <td></td>
                         <td></td>
                         <td></td>
@@ -78,8 +79,8 @@
                     </tr>
                     <tr>
                         <td id="n3"></td>
-                        <td id="c3"></td>
                         <td id="q3"></td>
+                        <td id="c3"></td>
                         <td></td>
                         <td></td>
                         <td></td>
@@ -87,8 +88,8 @@
                     </tr>
                     <tr>
                         <td id="n4"></td>
-                        <td id="c4"></td>
                         <td id="q4"></td>
+                        <td id="c4"></td>
                         <td></td>
                         <td></td>
                         <td></td>
