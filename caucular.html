@@ -21,25 +21,31 @@
             <form action="">
                 <div class="used">
     
-                    <input type="text" required>
+                    <input id="produto" type="text" required>
                     <label for="">Produto</label>
                 </div>
     
                 <div class="used">
-                    <input type="number" required>
+                    <input id="quantidade" type="number" required>
                     <label for="">Quantidade</label>
                 </div>
     
                 <div class="used">
-                    <input type="number" required>
+                    <input id="custo" type="number" required>
                     <label for="">Custo</label>
                 </div>
     
-                <button onclick="add()">Adicionar</button>
+                <button onclick=  "myfunction()">Adicionar</button>
             </form>
     
     
             <table>
+                <colgroup>
+                    <col>
+                    <col>
+                    <col>
+                    <col>
+                </colgroup>
                 <thead>
                     <tr>
                         <th>Nome</th>
@@ -53,52 +59,44 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td></td>
-                        <td></td>
+                        <td id="n1"></td>
+                        <td id="c1"></td>
+                        <td id="q1"></td>
                         <td></td>
                         <td></td>
                         <td></td>
                         <td></td>
                     </tr>
                     <tr>
-                        <td></td>
-                        <td></td>
-                        <td></td>
+                        <td id="n2"></td>
+                        <td id="c2"></td>
+                        <td id="q2"></td>
                         <td></td>
                         <td></td>
                         <td></td>
                         <td></td>
                     </tr>
                     <tr>
-                        <td></td>
-                        <td></td>
-                        <td></td>
+                        <td id="n3"></td>
+                        <td id="c3"></td>
+                        <td id="q3"></td>
                         <td></td>
                         <td></td>
                         <td></td>
                         <td></td>
                     </tr>
-                    <tfoot>
-                        <tr>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                        </tr>
-                    </tfoot>
+                    <tr>
+                        <td id="n4"></td>
+                        <td id="c4"></td>
+                        <td id="q4"></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
                 </tbody>
+                <tfoot>
+                </tfoot>
             </table>
     
 </div>
