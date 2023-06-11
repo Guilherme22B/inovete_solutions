@@ -8,6 +8,7 @@ function myfunction(){
     var custo = Number(document.querySelector("input#custo").value)
 
     num.push("0i")
+
     est.push(produto)
     est.push(quantidade)
     est.push(custo)
@@ -56,7 +57,7 @@ function myfunction(){
         n4.innerHTML = produto
         q4.innerHTML = quantidade
         c4.innerHTML = custo
-    }else{
+    }else if((num.length <= 40)){
         var tbody = document.querySelector("tbody")
         var tr = tbody.insertRow()
 
@@ -71,5 +72,12 @@ function myfunction(){
         td_nome.innerHTML += produto
         td_quantidade.innerHTML += quantidade
         td_custo.innerHTML += custo
-}
+
+        if(num.length >= 12){
+            var r = document.querySelector("main")
+            r.style.paddingBottom = '560px'
+        }
+    }else{
+        alert("[Erro tabela chegou ao maximo permitido]")
+    }
 }
