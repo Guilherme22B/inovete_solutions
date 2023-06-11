@@ -1,5 +1,8 @@
 est = []
 
+num = []
+
+
 function myfunction(){
     var produto = document.querySelector("input#produto").value
     var quantidade = Number(document.querySelector("input#quantidade").value)
@@ -10,6 +13,7 @@ function myfunction(){
 
     const jsonData = JSON.stringify(est)
     console.log(jsonData)
+    console.log(est)
 
 
 
@@ -34,8 +38,8 @@ function myfunction(){
 
 
 
-
-
+num.push("0i")
+console.log(num)
 
 
     var n1 = document.querySelector("td#n1")
@@ -54,25 +58,45 @@ function myfunction(){
     var q4 = document.querySelector("td#q4")
 
 
-    if((est.length)-1 == 1){
+    if((num.length) == 1){
         n1.innerHTML = produto
         q1.innerHTML = quantidade
         c1.innerHTML = custo
     }
 
-    if((est.length)-1 == 2){
+    else if((num.length) == 2){
         n2.innerHTML = produto
         q2.innerHTML = quantidade
         c2.innerHTML = custo
     }
-    if((est.lengt)-1 == 3){
+    else if((num.length) == 3){
         n3.innerHTML = produto
         q3.innerHTML = quantidade
         c3.innerHTML = custo
     }
-    if((est.length)-1 == 4){
+    else if((num.length) == 4){
         n4.innerHTML = produto
         q4.innerHTML = quantidade
         c4.innerHTML = custo
+    }else{
+
+
+        var tbody = document.querySelector("tbody")
+        var tr = document.createElement("tr")
+        var t1 = document.createElement("td")
+        var t2 = document.createElement("td")
+        var t3 = document.createElement("td")
+        var t5 = document.createElement("td")
+        var t6 = document.createElement("td")
+        var t7 = document.createElement("td")
+
+        tbody.appendChild(tr)
+        tbody.appendChild(t1).innerHTML += produto
+        tbody.appendChild(t2).innerHTML += quantidade
+        tbody.appendChild(t3).innerHTML += custo
+        tbody.appendChild(t4).innerHTML += "o"
+        tbody.appendChild(t5).innerHTML += "o"
+        tbody.appendChild(t6).innerHTML += "o"
+        tbody.appendChild(t7).innerHTML += "o"
     }
 }
