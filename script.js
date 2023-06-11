@@ -11,11 +11,14 @@ function myfunction(){
     est.push(quantidade)
     est.push(custo)
 
-    const jsonData = JSON.stringify(est)
-    console.log(jsonData)
-    console.log(est)
+    //const jsonData = JSON.stringify(est)
+    //console.log(jsonData)
 
 
+
+    const user = require('./user.json');
+    
+    console.log(user)
 
 
 
@@ -39,7 +42,6 @@ function myfunction(){
 
 
 num.push("0i")
-console.log(num)
 
 
     var n1 = document.querySelector("td#n1")
