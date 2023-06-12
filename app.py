@@ -1,4 +1,50 @@
-estoque = {}
+from flask import Flask, request, jsonify
+import json
+
+app = Flask(__name__)
+
+@app.route('/adicionar_item', methods=['POST'])
+def adicionar_item():
+    data = json.loads(request.data)
+    item = data['item']
+    quantidade = data['quantidade']
+    
+    # Chame a função adicionar_item do seu código Python
+
+    def adicionar_item():
+        item + 10
+
+    # Passando os parâmetros recebidos do JavaScript
+    
+    return jsonify({'message': 'Item adicionado ao estoque.'})
+
+@app.route('/remover_item', methods=['POST'])
+def remover_item():
+    data = json.loads(request.data)
+    item = data['item']
+    quantidade = data['quantidade']
+    
+    # Chame a função remover_item do seu código Python
+
+
+    # Passando os parâmetros recebidos do JavaScript
+    
+    return jsonify({'message': 'Item removido do estoque.'})
+
+# Defina outras rotas e funções conforme necessário
+
+if __name__ == '_main_':
+
+    app.run()
+
+
+
+
+
+
+
+
+    estoque = {}
 
 def adicionar_item(item, quantidade):
     if item in estoque:

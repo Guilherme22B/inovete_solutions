@@ -7,6 +7,13 @@ function myfunction(){
     var quantidade = Number(document.querySelector("input#quantidade").value)
     var custo = Number(document.querySelector("input#custo").value)
 
+
+    for( num in est){
+        if(est[num] == produto){
+            alert("Erro")
+        }
+    }
+
     num.push("0i")
 
     est.push(produto)
@@ -18,6 +25,7 @@ function myfunction(){
     //console.log(jsonData)
     //const user = require('./user.json');
     //console.log(user)
+
 
 
 
