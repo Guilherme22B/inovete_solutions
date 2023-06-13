@@ -23,8 +23,9 @@ function myfunction(){
     
     let p_venda = custo * Markup
     let lucro = (p_venda - custo) * quantidade
-    var impostos = lucro * 0.2
+    var impostos = lucro * 0.15
     var impostos = Math.floor(impostos)
+
     
 
     if(p.length == 1){

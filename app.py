@@ -1,3 +1,5 @@
+from openpyxl import Workbook
+'''''
 from flask import Flask, request, jsonify
 import json
 
@@ -36,6 +38,7 @@ def remover_item():
 if __name__ == '_main_':
 
     app.run()
+'''
 
 
 
@@ -43,8 +46,7 @@ if __name__ == '_main_':
 
 
 
-
-    estoque = {}
+estoque = {}
 
 def adicionar_item(item, quantidade):
     if item in estoque:
@@ -149,7 +151,6 @@ while True:
     
 #conversor para exel
 
-from openpyxl import Workbook
 
 arquivo  = Workbook()
 
@@ -171,10 +172,9 @@ b = str(input("qualquer coisa")) #teste para colocar informações
 c = str(input("qualquer coisa")) #teste para colocar informações 
 d = str(input("qualquer coisa")) #teste para colocar informações
 
-Projeto["A1"] = a #A1 igual a celula que vai ficar com os dados A2 A3 A4 a mesma coisa
-Projeto["A2"] = b
-Projeto["A3"] = c
-Projeto["A4"] = d
+Projeto["A1"] = quantidade #A1 igual a celula que vai ficar com os dados A2 A3 A4 a mesma coisa
+Projeto["A2"] = item
+Projeto["A3"] = imposto4
 
 plan_itens["A1"] = a #plan_itens igual a planilha que vai ser salva os dados 
 plan_itens["A2"] = b
