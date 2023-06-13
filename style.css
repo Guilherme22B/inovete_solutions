@@ -277,6 +277,7 @@ tfoot > td{
         max-width: 425px;
         min-width: 345px;
         padding: 0px;
+        padding-bottom: 20px;
     }
     img.cont{
         margin: auto;
@@ -326,6 +327,7 @@ tfoot > td{
 }
 @media screen and (max-width: 375px){
     main{
+        padding-bottom: 20px;
         margin: auto;
         width: 400px;
     }
