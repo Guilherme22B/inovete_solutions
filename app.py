@@ -150,8 +150,6 @@ while True:
 
     
 #conversor para exel
-
-
 arquivo  = Workbook()
 
 Projeto = arquivo.active #criação da planilha
@@ -167,18 +165,9 @@ plan_total_vendas = arquivo.create_sheet("total de vendas") #criação da subi p
 plan_lucro_total = arquivo.create_sheet("lucro total") #criação da subi planilha
 Projeto.title = "Produtos"
 
-a = str(input("qualquer coisa")) #teste para colocar informações
-b = str(input("qualquer coisa")) #teste para colocar informações
-c = str(input("qualquer coisa")) #teste para colocar informações 
-d = str(input("qualquer coisa")) #teste para colocar informações
 
 Projeto["A1"] = quantidade #A1 igual a celula que vai ficar com os dados A2 A3 A4 a mesma coisa
 Projeto["A2"] = item
-Projeto["A3"] = imposto4
-
-plan_itens["A1"] = a #plan_itens igual a planilha que vai ser salva os dados 
-plan_itens["A2"] = b
-plan_itens["A3"] = c
-plan_itens["A4"] = d
+Projeto["A3"] = 123
 
 arquivo.save("Projeto.xlsx") #teste para salvar as planilhas
